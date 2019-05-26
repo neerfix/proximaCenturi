@@ -1,0 +1,17 @@
+/*
+Theme Name: Alph-One
+Author: Nicolas NOTARARIGO
+Author URI: https://www.nicolasnotararigo.com
+Description: alphone, première version pour le cours d'intégration web.
+Requires at least: WordPress 5.0
+Version: 0.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, custom-header, custom-menu
+Text Domain: alphone
+*/
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
