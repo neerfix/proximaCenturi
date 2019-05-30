@@ -11,10 +11,5 @@
 
 
 <header class="site__header">
-    <nav class="navbar fixed-top d-flex navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand ml-lg-5 d-flex" href="<?= get_site_url(); ?>"><div class="logo"></div> &nbsp; <?= get_bloginfo('name'); ?></a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
-        </div>
-    </nav>
+    
 </header>

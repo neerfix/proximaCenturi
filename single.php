@@ -1,11 +1,6 @@
 <?php get_header(); ?>
 <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
-
-    <div class="header-img--bg">
-        <h1 class="header-title"><?php the_title(); ?></h1>
-        <?php the_post_thumbnail('medium_large'); ?>
-    </div>
-<div class="container <?php if ( is_active_sidebar( 'sidebar-right' ) ) : ?>
+<div class="container w-75<?php if ( is_active_sidebar( 'sidebar-right' ) ) : ?>
             d-flex
         <?php endif; ?>">
     <article class="post <?php if ( is_active_sidebar( 'sidebar-right' ) ) : ?>
@@ -18,7 +13,7 @@
 
         <div class="post__meta">
             <div class="author">
-                <?php echo get_avatar( get_the_author_meta( 'ID' ), 40 ); ?>
+                <?php echo get_avatar( get_the_author_meta( 'ID' ), 70 ); ?>
                 <p>Publié le <?php the_date(); ?> <br/>
                 par <?php the_author(); ?></p>
             </div>
@@ -28,7 +23,7 @@
             </div>
             <div class="tags">
                 Étiquette(s)
-                <?php the_tags(); ?>
+                <?php the_tags('<div class="mestags">', '&nbsp;', '</div>'); ?>
             </div>
         </div>
         <br>

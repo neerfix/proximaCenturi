@@ -1,0 +1,86 @@
+.testimonial {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color: #333;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.testimonial * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+
+.testimonial img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.testimonial blockquote {
+  position: relative;
+  padding: 25px 50px 25px 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+}
+.testimonial blockquote:before,
+.testimonial blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+.testimonial blockquote:before {
+  top: 25px;
+  left: 20px;
+}
+.testimonial blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 0;
+}
+
+.testimonial-arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  margin: 0;
+  position: absolute;
+}
+
+.testimonial .testimonial-author {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 25px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.testimonial .testimonial-author h5 {
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+.testimonial .testimonial-author h5 span {
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 5px;
+}

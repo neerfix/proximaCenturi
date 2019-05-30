@@ -1,0 +1,27 @@
+/* COLOR */
+@import "setup/variables";
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
+
+/* Layout */
+@import "layouts/reset";
+@import "layouts/a_link";
+@import "layouts/testimonial";
+@import "layouts/article";
+
+/* Components */
+@import "components/card--article";
+@import "components/primary--button";
+@import "components/header_article";
+@import "components/global-syle";
+@import "components/navbar";
+@import "components/post_meta";
+@import "components/sidebar";
+@import "components/footer";
+
+/* FONTS */
+@font-face {
+  font-family: Opificio;
+  src: url("../assets/fonts/Opificio_regular.ttf");
+}

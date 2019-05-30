@@ -7,7 +7,6 @@ require_once get_template_directory() . '/inc/post-types.php';
 // Fonctionnalités
 require_once get_template_directory() . '/inc/features.php';
 
-
 register_nav_menus(array(
     'main' => 'Menu Principal',
     'footer' => 'Bas de page',
@@ -49,6 +48,11 @@ function register_acf_block_types() {
         'keywords'          => array( 'post', 'list' ),
     ));
 }
+
+function load_dashicons_front_end() {
+    wp_enqueue_style( 'dashicons' );
+}
+add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
 
 // Check if function exists and hook into setup.
 if( function_exists('acf_register_block_type') ) {

@@ -1,0 +1,21 @@
+.navbar-collapse{
+  justify-content: end !important;
+  margin-left: 25%;
+}
+
+ul.menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.menu li{
+  display: list-item;
+  text-align: -webkit-match-parent;
+  padding-right: .5rem;
+  padding-left: .5rem;
+}

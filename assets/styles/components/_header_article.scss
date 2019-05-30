@@ -1,0 +1,23 @@
+.header-img--bg{
+  height: 250px;
+  overflow: hidden;
+  margin-top: 56px;
+  margin-bottom: 3em;
+}
+
+div.header-img--bg img{
+  width: 100%;
+  height: auto;
+  margin-top: -40%;
+}
+
+.header-title{
+  color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  background-color: rgba(31, 31, 31, 0.4);
+}

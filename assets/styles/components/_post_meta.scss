@@ -1,0 +1,30 @@
+.post__meta {
+  border: 1px solid #9ea3a7;
+  border-radius: 2px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #9ea3a7;
+  width: 100% !important;
+  div.author{
+    display: flex;
+    width: 40%;
+    align-items: center;
+  }
+  li{
+    list-style: none;
+    margin-left: -2em;
+  }
+  img{
+    margin: 1em;
+    border-radius: 5em
+  }
+  div.category, div.tags{
+    border-left: 1px solid #9ea3a7;
+    padding: 0.5em;
+    list-style: none;
+    flex-direction: column;
+    min-height: 7em;
+    width: 30%;
+  }
+}

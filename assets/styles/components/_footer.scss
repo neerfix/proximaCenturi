@@ -1,0 +1,32 @@
+footer.site__footer{
+  position: fixed;
+  display: flex !important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  padding: 0 5%;
+  align-items: center;
+  background-color: #283d69;
+  z-index: 1000;
+  ul{
+    li{
+      padding: 0;
+      list-style-type: none;
+      margin: 0 15px;
+      color: #8a9dbe;
+    }
+  }
+  .menu a{
+    background: none;
+    color: #8a9dbe !important;
+    -webkit-text-fill-color: initial;
+    text-decoration: none !important;
+  }
+  .menu a:hover{
+    color: #4095f9 !important;
+  }
+  .menu a:before {
+    background-color: #4095f9!important;
+  }
+}
