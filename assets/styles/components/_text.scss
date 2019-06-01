@@ -1,0 +1,15 @@
+.text-blue{
+  background: -moz-linear-gradient(left, rgba(64,147,251,1) 0%, rgba(9,223,210,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(64,147,251,1) 0%,rgba(9,223,210,1) 100%);
+  background: linear-gradient(to right, rgba(64,147,251,1) 0%,rgba(9,223,210,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-red{
+  background: -moz-linear-gradient(left, rgba(243,119,169,1) 0%, rgba(244,166,142,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(243,119,169,1) 0%,rgba(244,166,142,1) 100%);
+  background: linear-gradient(to right, rgba(243,119,169,1) 0%,rgba(244,166,142,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
