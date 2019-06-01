@@ -34,14 +34,6 @@ a.navbar-brand {
   color: white;
 }
 
-.logo{
-  width: 30px;
-  height: 30px;
-  border-top: 1px solid $primary-color;
-  border-radius: 50%;
-  animation: spin 2s linear infinite;
-}
-
 .wp-block-code, .wp-block-preformatted pre{
   display: block;
   text-align: left !important;
@@ -53,21 +45,5 @@ a.navbar-brand {
     padding: 3px;
     color: rgb(243,119,169) !important;
     background-color: #333333;
-  }
-}
-
-
-@keyframes spin{
-  0%{
-    transform: rotate(0deg);
-    border-top: 1px solid $primary-color;
-  }
-  50%{
-    transform: rotate(180deg);
-    border-top: 1px solid red;
-  }
-  100%{
-    transform: rotate(360deg);
-    border-top: 1px solid $primary-color;
   }
 }

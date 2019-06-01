@@ -1,0 +1,21 @@
+.header{
+  display: flex;
+  color: white;
+  width: 100%;
+  padding: 4% 7% 1%;
+  .logo{
+    height: auto;
+    width: 75px;
+    margin-top: -1em;
+    margin-left: 2em;
+  }
+  .header-left{
+    position: relative;
+    flex: 1 1 0%;
+  }
+  .header-right{
+    position: relative;
+    text-align: right;
+    flex: 5 1 0%;
+  }
+}
