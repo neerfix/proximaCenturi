@@ -11,12 +11,12 @@
 <body <?php body_class( 'site' ); ?>>
 <header class="header">
     <div class="header-left" wfd-id="14">
-        <a href="https://www.nicolasnotararigo.com/" class="logo">
-            <img src="https://www.nicolasnotararigo.com/assets/img/logo.png" alt="Nicolas Notararigo - logo" title="logo" class="logo">
+        <a href="<?php bloginfo('url') ?>" class="logo" title="<?php bloginfo('name') ?>">
+            <img src="https://www.nicolasnotararigo.com/assets/img/logo.png" alt="<?php bloginfo('name') ?> logo" title="<?php bloginfo('name') ?> logo">
         </a>
     </div>
     <div class="header-right" wfd-id="13">
-        <a href="https://www.nicolasnotararigo.com/contact_me" class="btn btn-red">
+        <a href="<?php bloginfo('url') ?>" class="btn btn-red">
             Me contacter
         </a>
     </div>

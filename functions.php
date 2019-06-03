@@ -48,12 +48,6 @@ function register_acf_block_types() {
         'keywords'          => array( 'post', 'list' ),
     ));
 }
-
-function load_dashicons_front_end() {
-    wp_enqueue_style( 'dashicons' );
-}
-add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
-
 // Check if function exists and hook into setup.
 if( function_exists('acf_register_block_type') ) {
     add_action('acf/init', 'register_acf_block_types');

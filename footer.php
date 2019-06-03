@@ -1,7 +1,7 @@
 <footer class="site__footer">
     <?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
-    <a href="<?php get_home_url(); ?>" class="logo">
-        <img src="http://notararigo-nicolas.local/wp-content/uploads/2019/05/logo.png" alt="" class="logo">
+    <a href="<?php bloginfo('url') ?>" class="logo">
+        <img src="http://notararigo-nicolas.local/wp-content/uploads/2019/05/logo.png" alt="<?php bloginfo('name') ?> logo" class="logo">
     </a>
     <div class="footer-menu--right">
         <ul class="menu">
