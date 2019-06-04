@@ -12,7 +12,7 @@
 <header class="header">
     <div class="header-left" wfd-id="14">
         <a href="<?php bloginfo('url') ?>" class="logo" title="<?php bloginfo('name') ?>">
-            <img src="https://www.nicolasnotararigo.com/assets/img/logo.png" alt="<?php bloginfo('name') ?> logo" title="<?php bloginfo('name') ?> logo" class="logo">
+            <img src="https://www.nicolasnotararigo.com/wp-content/uploads/2019/06/logo.png" alt="<?php bloginfo('name') ?> logo" title="<?php bloginfo('name') ?> logo" class="logo">
         </a>
     </div>
     <div class="header-right" wfd-id="13">
