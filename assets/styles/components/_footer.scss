@@ -17,12 +17,12 @@ footer.site__footer{
       padding: 0;
       list-style-type: none;
       margin: 0 15px;
-      color: #8a9dbe;
+      color: $color-text;
     }
   }
   .menu a{
     background: none;
-    color: #8a9dbe !important;
+    color: $color-text !important;
     -webkit-text-fill-color: initial;
     text-decoration: none !important;
   }
