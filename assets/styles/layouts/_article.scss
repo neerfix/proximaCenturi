@@ -1,7 +1,9 @@
-h1.title-article {
-  font-family: 'Roboto', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  .title-article {
+    font-family: 'Roboto', sans-serif;
+  }
 }
-
 .blog-article {
   transition: 0.3s;
 }
