@@ -39,6 +39,16 @@ function register_acf_block_types() {
     ));
     // register a testimonial block.
     acf_register_block_type(array(
+        'name'              => 'Testimonial',
+        'title'             => __('Testimonial'),
+        'description'       => __('A custom testimonial block.'),
+        'render_template'   => 'parts/blocks/testimonial/testimonial.php',
+        'category'          => 'formatting',
+        'icon'              => 'admin-comments',
+        'keywords'          => array( 'testimonial', 'quote' ),
+    ));
+    // register a testimonial block.
+    acf_register_block_type(array(
         'name'              => 'Last-posts-newstyle',
         'title'             => __('Last Posts New Style'),
         'description'       => __('A custom testimonial block.'),
