@@ -15,6 +15,7 @@
                         <div class="col-lg-8 col-sm-12 bg-lightgrey p-4 br4">
                             <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
                             <p><?php the_excerpt(); ?></p>
+                            <i>Publié le <?php the_date('d M Y'); ?></i>
                             <?php the_category(); ?>
                             <?php the_tags('<div class="mestags">', '&nbsp;', '</div>'); ?>
                         </div>
@@ -26,6 +27,7 @@
                         <div class="col-lg-8 col-sm-12 bg-lightgrey p-4 bl4">
                             <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
                             <p><?php the_excerpt(); ?></p>
+                            <i>Publié le <?php the_date('d M Y'); ?></i>
                             <?php the_category(); ?>
                             <?php the_tags('<div class="mestags">', '&nbsp;', '</div>'); ?>
                         </div>
