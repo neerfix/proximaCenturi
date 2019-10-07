@@ -10,14 +10,17 @@
 
 <body <?php body_class( 'site' ); ?>>
 <header class="header">
-    <div class="header-left" wfd-id="14">
-        <a href="<?php bloginfo('url') ?>" class="logo" title="<?php bloginfo('name') ?>">
-            <img src="https://www.nicolasnotararigo.com/wp-content/uploads/2019/06/logo.png" alt="<?php bloginfo('name') ?> logo" title="<?php bloginfo('name') ?> logo" class="logo">
-        </a>
-    </div>
-    <div class="header-right" wfd-id="13">
-        <a href="<?php bloginfo('url') ?>/contact/" class="btn btn-red">
-            Me contacter
-        </a>
-    </div>
+    <a href="<?php bloginfo('url') ?>" class="logo" title="<?php bloginfo('name') ?>">
+        <img src="https://www.nicolasnotararigo.com/wp-content/uploads/2019/06/logo.png" alt="<?php bloginfo('name') ?> logo" title="<?php bloginfo('name') ?> logo" class="logo">
+    </a>
 </header>
+<div class="right-menu">
+    <a href="<?php bloginfo('url') ?>/contact" class="btn btn-red">
+        <i class="fas fa-dove"></i>
+        <span>Me contacter</span>
+    </a>
+    <a href="<?php bloginfo('url') ?>/about-me" class="btn btn-blue">
+        <i class="fas fa-info-circle"></i>
+        <span>A propos</span>
+    </a>
+</div>

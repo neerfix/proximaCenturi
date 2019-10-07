@@ -1,0 +1,49 @@
+.right-menu{
+  position: fixed;
+  right: -100px;
+  transition: .5s;
+  flex-direction: column;
+  display: flex;
+  .btn.btn-red, .btn.btn-blue{
+    color: #fff;
+    font-size: .7em!important;
+    font-weight: 400!important;
+    height: 4em;
+    min-width: 45px;
+    border-radius: 5px!important;
+    line-height: 3em!important;
+    margin: 1em -1em;
+    padding: .375rem 1.75rem!important;
+    transition: .5s;
+  }
+  .btn.btn-red{
+    i.fas.fa-dove {
+      font-size: 1.7em;
+      position: relative;
+      left: -15px;
+      top: 3px;
+    }
+    span {
+      padding-left: 1em;
+    }
+    &:hover{
+      transform: translateX(-100px);
+      transition: .5s;
+    }
+  }
+  .btn.btn-blue{
+    i.fas.fa-info-circle {
+      font-size: 1.7em;
+      position: relative;
+      left: -1.25em;
+      top: 3px;
+    }
+    span {
+      padding-left: 1em;
+    }
+    &:hover{
+      transform: translateX(-100px);
+      transition: .5s;
+    }
+  }
+}
