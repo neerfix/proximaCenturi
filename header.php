@@ -19,7 +19,7 @@
         <i class="fas fa-dove"></i>
         <span>Me contacter</span>
     </a>
-    <a href="<?php bloginfo('url') ?>/about-me" class="btn btn-blue">
+    <a href="<?php bloginfo('url') ?>/about" class="btn btn-blue">
         <i class="fas fa-info-circle"></i>
         <span>A propos</span>
     </a>
