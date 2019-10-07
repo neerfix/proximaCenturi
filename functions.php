@@ -1,5 +1,4 @@
 <?php
-
 // Configuration du thème
 require_once get_template_directory() . '/inc/config.php';
 // Types de publication et taxonomies
@@ -12,6 +11,36 @@ register_nav_menus(array(
     'footer' => 'Bas de page',
 ));
 
+function wpc_theme_support() {
+    add_theme_support('post-formats', array('aside','gallery','link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
+}
+add_action('after_setup_theme','wpc_theme_support');
+
+function capitaine_register_post_types() {
+
+    // CPT Portfolio
+    $labels = array(
+        'name' => 'Portfolio',
+        'all_items' => 'Tous les projets',  // affiché dans le sous menu
+        'singular_name' => 'Projet',
+        'add_new_item' => 'Ajouter un projet',
+        'edit_item' => 'Modifier le projet',
+        'menu_name' => 'Portfolio'
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'show_in_rest' => true,
+        'has_archive' => true,
+        'supports' => array( 'title', 'editor','thumbnail', 'excerpt' ),
+        'menu_position' => 5,
+        'menu_icon' => 'dashicons-admin-customizer',
+    );
+
+    register_post_type( 'portfolio', $args );
+}
+add_action( 'init', 'capitaine_register_post_types' ); // Le hook init lance la fonction
 add_action( 'widgets_init', 'theme_slug_widgets_init' );
 function theme_slug_widgets_init() {
     register_sidebar(array(
@@ -65,7 +94,7 @@ if( function_exists('acf_register_block_type') ) {
 
 function enqueue_styles() {
     wp_enqueue_style( 'nicolasnotararigo', get_template_directory_uri() . '/css/style.css');
-
+    wp_enqueue_style( 'one_page', get_template_directory_uri() . '/js/jquery.onepage-scroll.min.js');
     // Déclarer jQuery
     wp_deregister_script( 'jquery' ); // On annule l'inscription du jQuery de WP
     wp_enqueue_script( // On déclare une version plus moderne
@@ -75,6 +104,7 @@ function enqueue_styles() {
         '3.3.1',
         true
     );
+
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_styles');
