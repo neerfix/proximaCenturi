@@ -16,7 +16,7 @@
         </a>
     </div>
     <div class="header-right" wfd-id="13">
-        <a href="<?php bloginfo('url') ?>" class="btn btn-red">
+        <a href="<?php bloginfo('url') ?>/contact/" class="btn btn-red">
             Me contacter
         </a>
     </div>
