@@ -1,5 +1,5 @@
-.menu a{ position: relative; color: $url-color !important; text-decoration: none; transition: 0.5s; cursor: pointer}
-.menu a:hover{  color: $url-color--hover !important;  transition: 0.5s; cursor: pointer}
+.menu a{ position: relative; color: $url-color; text-decoration: none; transition: 0.5s; cursor: pointer}
+.menu a:hover{  color: $url-color--hover;  transition: 0.5s; cursor: pointer}
 .menu a:before {
   content: "";
   position: absolute;
@@ -8,7 +8,7 @@
   bottom: 0px;
   left: 0;
   top: 1.5em;
-  background-color: $url-color--hover !important;
+  background-color: $url-color--hover;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -20,9 +20,9 @@
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-.menu a:visited{color: $url-color--visited !important; text-decoration: none;}
+.menu a:visited{color: $primary-color; text-decoration: none;}
 .menu a.active{
-  color: $url-color--active !important;
+  color: $url-color--active;
   text-decoration: none;
   visibility: visible;
   -webkit-transform: scaleX(1);
@@ -35,12 +35,12 @@ a.more-link{
   border: 1px solid #425E8C;
   border-radius: 5px 0 5px 0;
   transition: 0.5s;
-  color: white !important;
+  color: white;
 }
 
 a.more-link:hover{
   background-color: #0069d9;
-  border-radius: 0 5px 0 5px!important;
+  border-radius: 0 5px 0 5px;
   transition: .5s;
   text-decoration: none;
 }

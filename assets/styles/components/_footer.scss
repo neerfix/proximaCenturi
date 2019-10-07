@@ -3,7 +3,7 @@ footer{
 }
 footer.site__footer{
   position: fixed;
-  display: flex !important;
+  display: flex;
   bottom: 0;
   left: 0;
   right: 0;
@@ -22,12 +22,11 @@ footer.site__footer{
   }
   .menu a{
     background: none;
-    color: $color-text !important;
-    -webkit-text-fill-color: initial;
-    text-decoration: none !important;
+    color: $color-text;
+    text-decoration: none;
   }
   .menu a:hover{
-    color: #4095f9 !important;
+    color: #4095f9;
   }
   .menu a:before {
     background-color: #4095f9!important;
