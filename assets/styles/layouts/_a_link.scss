@@ -20,9 +20,9 @@
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-.menu a:visited{color: $url-color !important; text-decoration: none;}
+.menu a:visited{color: $url-color--active !important; text-decoration: none;}
 .menu a.active, article p a.active{
-  color: $url-color--active !important;
+  color: $primary-color !important;
   text-decoration: none;
   visibility: visible;
   -webkit-transform: scaleX(1);
