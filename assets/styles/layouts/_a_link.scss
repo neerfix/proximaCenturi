@@ -1,4 +1,4 @@
-.menu a, article p a{ position: relative; color: $url-color--hover !important; text-decoration: none; transition: 0.5s; cursor: pointer}
+.menu a, article p a{ position: relative; color: $color-text !important; text-decoration: none; transition: 0.5s; cursor: pointer}
 .menu a:hover, article p a:hover{  color: $url-color--hover !important;text-decoration: none; transition: 0.5s; cursor: pointer}
 .menu a:before, article p a:before {
   content: "";
