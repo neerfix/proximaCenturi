@@ -1,4 +1,4 @@
-.menu a, article p a{ position: relative; color: $color-text !important; text-decoration: none; transition: 0.5s; cursor: pointer}
+.menu a, article p a{ position: relative; color: $color-text; text-decoration: none; transition: 0.5s; cursor: pointer}
 .menu a:hover, article p a:hover{  color: $primary-color;text-decoration: none; transition: 0.5s; cursor: pointer}
 .menu a:before, article p a:before {
   content: "";
@@ -20,9 +20,9 @@
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-.menu a:visited{color: $url-color--active !important; text-decoration: none;}
+.menu a:visited{color: $url-color--active; text-decoration: none;}
 .menu a.active, article p a.active{
-  color: $primary-color !important;
+  color: $primary-color;
   text-decoration: none;
   visibility: visible;
   -webkit-transform: scaleX(1);
