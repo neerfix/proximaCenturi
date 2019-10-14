@@ -13,7 +13,7 @@ if($_POST){
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ
     ]);
 
-    $pdo->query("INSERT INTO `pf_wp_contact` pf_name` = ".$_POST['name'].", `pf_email` =  ".$_POST['name'].", `pf_object` = ".$_POST['object'].", `pf_message` = ".$_POST['message']." ");
+    $pdo->query("INSERT INTO `pf_wp_contact` SET `pf_name` = ".$_POST['name'].", `pf_email` =  ".$_POST['name'].", `pf_object` = ".$_POST['object'].", `pf_message` = ".$_POST['message']." ");
 
 }
 ?>
