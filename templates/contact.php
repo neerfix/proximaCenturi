@@ -6,12 +6,24 @@ Template Post Type: page
 
 //require_once ('functions/recaptcha.php');
 
-$message = $_POST['object'] . " de l'entreprise " . $_POST['entreprise'] . ", <br />" . $_POST['message'];
+get_header();
+
 if($_POST){
-    mail("nicolas.notararigo@ynov.com", $_POST['object'], $message);
+
+    var_dump("PANCAKE");
+    var_dump($_POST);
+
+    $pdo = new PDO("mysql:host=localhost;dbname=local", "root", "", [
+        PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ
+    ]);
+
+    $pdo->query("INSERT INTO `pf_wp_contact` SET `pf_name` = `".$_POST['name']."`, `pf_email` =  `".$_POST['name']."`, `pf_object` = `".$_POST['object']."`, `pf_message` = `".$_POST['message']."` ");
+
 }
 
-get_header(); ?>
+?>
 <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
 <div class="container">
@@ -21,18 +33,14 @@ get_header(); ?>
             <div class="col-lg-8 col-sm-12">
                 <h2>Formulaire de contact</h2>
                 <p>Le formulaire de contact pour m'envoyer des pigeons éléctroniques automatiquement.</p>
-                <form action="">
+                <form action="" method="POST">
                     <div class="form-group">
                         <label for="name">Nom / Prénom</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Nom / Prénom">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="email@contact.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="entreprise">Entreprise</label>
-                        <input type="text" class="form-control" id="entreprise" placeholder="Entreprise">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="email@contact.com">
                     </div>
                     <div class="form-group">
                         <label for="object">Objet</label>
@@ -40,7 +48,7 @@ get_header(); ?>
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea class="form-control" id="message" rows="3"></textarea>
+                        <textarea class="form-control" name="message" id="message" rows="3"></textarea>
                     </div>
                     <input type="submit" class="btn btn-blue" value="Libérer le pigeon">
                 </form>
