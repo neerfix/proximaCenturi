@@ -7,7 +7,7 @@ if($_POST){
 
     var_dump($_POST);
 
-    $pdo = new PDO("mysql:host=localhost;dbname=pf_wp_contact", "H6B1", "H6B1_Pr25Nix4_Portfolio", [
+    $pdo = new PDO("mysql:host=localhost;dbname=wp_pf", "H6B1", "H6B1_Pr25Nix4_Portfolio", [
         PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ
