@@ -4,9 +4,6 @@ ini_set("display_errors", "1");
 error_reporting(E_ALL);
 
 if($_POST){
-
-    var_dump($_POST);
-
     $pdo = new PDO("mysql:host=localhost;dbname=wp_pf", "H6B1", "H6B1_Pr25Nix4_Portfolio", [
         PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
@@ -15,12 +12,12 @@ if($_POST){
 
     $pdo->query("INSERT INTO `pf_wp_contact` SET `pf_name` = '".$_POST['name']."', `pf_email` =  '".$_POST['name']."', `pf_object` = '".$_POST['object']."', `pf_message` = '".$_POST['message']."' ");
 
+}else{
+    echo '<div class="container text-center">
+        <h1>Code 404!</h1>
+        <p>Spaceman! You\'re lost in deep space.</p>
+    </div>';
 }
 ?>
-
-<div class="container text-center">
-    <h1>Code 404!</h1>
-    <p>Spaceman! You're lost in deep space.</p>
-</div>
 
 <?php get_footer(); ?>
