@@ -12,8 +12,11 @@ if($_POST){
 
     $pdo->query("INSERT INTO `pf_wp_contact` SET `pf_name` = '".$_POST['name']."', `pf_email` =  '".$_POST['name']."', `pf_object` = '".$_POST['object']."', `pf_message` = '".$_POST['message']."' ");
 
-    echo '<div class="alert alert-success" role="alert">
-          Votre message à été envoyé avec succès !
+    echo '
+        <div class="container">
+            <div class="alert alert-success" role="alert">
+              Votre message à été envoyé avec succès !
+            </div>
         </div>';
 
 }else{
