@@ -36,22 +36,23 @@ if($_POST){
                 <form action="" method="POST">
                     <div class="form-group">
                         <label for="name">Nom / Prénom</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Nom / Prénom">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Nom / Prénom" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="email@contact.com">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="email@contact.com" required>
                     </div>
                     <div class="form-group">
                         <label for="object">Objet</label>
-                        <input type="text" class="form-control" name="object" id="object" placeholder="Objet">
+                        <input type="text" class="form-control" name="object" id="object" placeholder="Objet" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                        <textarea class="form-control" name="message" id="message" rows="3" required></textarea>
                     </div>
                     <input type="submit" class="btn btn-blue" value="Libérer le pigeon">
                 </form>
+                <br>
             </div>
             <div class="col-lg-4 col-sm-12">
                 <h2>Coordonnées</h2>

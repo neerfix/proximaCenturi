@@ -12,6 +12,10 @@ if($_POST){
 
     $pdo->query("INSERT INTO `pf_wp_contact` SET `pf_name` = '".$_POST['name']."', `pf_email` =  '".$_POST['name']."', `pf_object` = '".$_POST['object']."', `pf_message` = '".$_POST['message']."' ");
 
+    echo '<div class="alert alert-success" role="alert">
+          Votre message à été envoyé avec succès !
+        </div>';
+
 }else{
     echo '<div class="container text-center">
         <h1>Code 404!</h1>
