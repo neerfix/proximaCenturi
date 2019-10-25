@@ -95,6 +95,7 @@ if( function_exists('acf_register_block_type') ) {
 function enqueue_styles() {
     wp_enqueue_style( 'nicolasnotararigo', get_template_directory_uri() . '/css/style.css');
     wp_enqueue_style( 'one_page', get_template_directory_uri() . '/js/jquery.onepage-scroll.min.js');
+    wp_enqueue_style( 'recaptcha', 'https://www.google.com/recaptcha/api.js');
     // Déclarer jQuery
     wp_deregister_script( 'jquery' ); // On annule l'inscription du jQuery de WP
     wp_enqueue_script( // On déclare une version plus moderne

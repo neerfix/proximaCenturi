@@ -1,32 +1,14 @@
 <?php
 /*
-Template Name: Contact
+Template Name: Curriculum Vitae
 Template Post Type: page
 */
 
-require_once (__DIR__.'/../functions/recaptcha.php');
 get_header();
-
-
-if($_POST){
-
-    var_dump("PANCAKE");
-    var_dump($_POST);
-
-    $pdo = new PDO("mysql:host=localhost;dbname=local", "root", "", [
-        PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ
-    ]);
-
-    $pdo->query("INSERT INTO `pf_wp_contact` SET `pf_name` = `".$_POST['name']."`, `pf_email` =  `".$_POST['name']."`, `pf_object` = `".$_POST['object']."`, `pf_message` = `".$_POST['message']."` ");
-
-}
 
 ?>
 <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
-    <script src='https://www.google.com/recaptcha/api.js'></script>
 <div class="container">
     <article class="post">
         <h1 class="text-center"><?php the_title(); ?></h1>
@@ -51,8 +33,6 @@ if($_POST){
                         <label for="message">Message</label>
                         <textarea class="form-control" name="message" id="message" rows="3" required></textarea>
                     </div>
-                    <div class="g-recaptcha" data-sitekey="6LetKKcUAAAAAPlwR8hx3n_5_E2JVW417xUjoG3l"></div>
-                    <br>
                     <input type="submit" class="btn btn-blue" value="Libérer le pigeon">
                 </form>
                 <br>
