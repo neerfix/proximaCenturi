@@ -4,7 +4,6 @@ Template Name: Contact
 Template Post Type: page
 */
 
-require_once (__DIR__.'/../functions/recaptcha.php');
 get_header();
 
 
@@ -51,7 +50,7 @@ if($_POST){
                         <label for="message">Message</label>
                         <textarea class="form-control" name="message" id="message" rows="3" required></textarea>
                     </div>
-                    <div class="g-recaptcha" data-sitekey="6LetKKcUAAAAAPlwR8hx3n_5_E2JVW417xUjoG3l"></div>
+<!--                    <div class="g-recaptcha" data-sitekey="6LetKKcUAAAAAPlwR8hx3n_5_E2JVW417xUjoG3l"></div>-->
                     <br>
                     <input type="submit" class="btn btn-blue" value="Libérer le pigeon">
                 </form>

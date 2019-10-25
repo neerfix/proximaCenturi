@@ -1,7 +1,6 @@
 <?php get_header();
 
-ini_set("display_errors", "1");
-error_reporting(E_ALL);
+require_once (__DIR__.'/../functions/recaptcha.php');
 
 if($_POST){
     $pdo = new PDO("mysql:host=localhost;dbname=wp_pf", "H6B1", "H6B1_Pr25Nix4_Portfolio", [
