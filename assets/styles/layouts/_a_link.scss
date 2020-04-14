@@ -1,5 +1,11 @@
-.menu a, article p a{ position: relative; color: $color-text; text-decoration: none; transition: 0.5s; cursor: pointer}
-.menu a:hover, article p a:hover{  color: $primary-color;text-decoration: none; transition: 0.5s; cursor: pointer}
+a{
+  color: $primary-color;
+}
+.menu a{
+  color: $url-color--active
+}
+article p a{ position: relative; text-decoration: none; transition: 0.5s; cursor: pointer}
+.menu a:hover, article p a:hover{  color: #0069d9 !important;text-decoration: none; transition: 0.5s; cursor: pointer}
 .menu a:before, article p a:before {
   content: "";
   position: absolute;
@@ -16,6 +22,7 @@
   transition: all 0.3s ease-in-out 0s;
 }
 .menu a:hover:before, article p a:hover:before {
+  background-color: #0069d9 !important;
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);

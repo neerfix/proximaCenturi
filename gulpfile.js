@@ -40,10 +40,10 @@ gulp.task('build', function () {
 
 // Static Server + watching SCSS/HTML files
 // gulp.task('serve', ['build'], function () {
-// //     browserSync.init({
-// //         proxy: 'localhost/boot'
-// //     });
-// //
-// //     gulp.watch("assets/styles/**/*.scss", ['build']);
-// //     gulp.watch("assets/styles/**/*.scss").on('change', browserSync.reload);
-// // });
+//     browserSync.init({
+//         proxy: 'localhost/boot'
+//     });
+//
+//     gulp.watch("assets/styles/**/*.scss", ['build']);
+//     gulp.watch("assets/styles/**/*.scss").on('change', browserSync.reload);
+// });
