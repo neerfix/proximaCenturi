@@ -1,11 +1,12 @@
-a{
-  color: $primary-color;
+.menu a {
+  color: $color-text;
 }
-.menu a{
-  color: $url-color--active
+article p a{
+  color: $primary-color
 }
-article p a{ position: relative; text-decoration: none; transition: 0.5s; cursor: pointer}
-.menu a:hover, article p a:hover{  color: #0069d9 !important;text-decoration: none; transition: 0.5s; cursor: pointer}
+
+.menu a, article p a{ position: relative; text-decoration: none; transition: 0.5s; cursor: pointer}
+.menu a:hover, article p a:hover{  color: #0069d9;text-decoration: none; transition: 0.5s; cursor: pointer}
 .menu a:before, article p a:before {
   content: "";
   position: absolute;
@@ -14,7 +15,7 @@ article p a{ position: relative; text-decoration: none; transition: 0.5s; cursor
   bottom: 0px;
   left: 0;
   top: 1.2em;
-  background-color: $url-color--hover !important;
+  background-color: #0069d9 !important;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -22,7 +23,6 @@ article p a{ position: relative; text-decoration: none; transition: 0.5s; cursor
   transition: all 0.3s ease-in-out 0s;
 }
 .menu a:hover:before, article p a:hover:before {
-  background-color: #0069d9 !important;
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
